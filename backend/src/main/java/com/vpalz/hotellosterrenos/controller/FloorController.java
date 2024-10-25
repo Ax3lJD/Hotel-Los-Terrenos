@@ -1,13 +1,14 @@
 package com.vpalz.hotellosterrenos.controller;
 
 import com.vpalz.hotellosterrenos.entity.Floor;
+import com.vpalz.hotellosterrenos.services.FloorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 public class FloorController {
-    @Autowired
+
     private FloorService floorService;
 
     @GetMapping("/{floorNumber}")
